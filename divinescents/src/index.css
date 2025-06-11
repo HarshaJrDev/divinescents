@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@tailwind utilities;
+@import "tailwindcss";
+
+/* Your custom CSS below (if needed) */
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6%);
+  }
+}
+.animate-bounce-slow {
+  animation: bounce-slow 2s infinite;
+}
+
+
+@keyframes bounce-short {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+.animate-bounce {
+  animation: bounce-short 0.6s ease-in-out;
+}
